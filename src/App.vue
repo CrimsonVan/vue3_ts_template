@@ -6,7 +6,7 @@ const countStore = useCountStore()
 const changeColor = () => {
   countStore.changeNum()
 }
-// console.log(x)
+//console.log(x)
 </script>
 <template>
   <header>
