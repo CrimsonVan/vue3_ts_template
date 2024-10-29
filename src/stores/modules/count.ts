@@ -6,7 +6,7 @@ export const useCountStore = defineStore(
     const num = ref(9)
     const changeNum = () => {
       num.value++
-      console.log(a)
+      console.log(b)
     }
     return {
       num,
