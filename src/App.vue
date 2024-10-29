@@ -6,7 +6,7 @@ const countStore = useCountStore()
 const changeColor = () => {
   countStore.changeNum()
 }
-//console.log(x)
+// console.log(x)
 </script>
 <template>
   <header>
@@ -15,6 +15,7 @@ const changeColor = () => {
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <nav>
+        <!-- <div</div> -->
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <div>{{ countStore.num }}</div>

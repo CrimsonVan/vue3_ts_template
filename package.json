@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.ts,.tsx,.cjs,.mjs --fix --ignore-path .gitignore",
-
+    "lint": "eslint . --fix",
     "format": "prettier --write src/",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
@@ -41,7 +40,7 @@
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
-      "eslint --fix"
+      "eslint . --fix"
     ]
   },
   "description": "This template should help get you started developing with Vue 3 in Vite.",

@@ -4,6 +4,7 @@ function test(args: any) {
   console.log(args)
 }
 test('hello')
+// console.log(bbbbb)
 </script>
 
 <template>
