@@ -1,19 +1,20 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL),
   //路由模式hash
   history: createWebHashHistory('/tstemplate/'),
   routes: [
     {
+      //登录成功以后展示数据的路由
       path: '/',
-      name: 'home',
-      component: HomeView
+      component: () => import('../views/layout/index.vue'),
+      name: 'layout'
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/login',
+      component: () => import('../views/login/index.vue'),
+      name: 'login'
     }
   ]
 })
